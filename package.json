@@ -1,32 +1,22 @@
 {
-  "name": "node-server-testing",
-  "version": "1.0.0",
-  "description": "Node Server Testing Challenge",
-  "main": "server.js",
+  "private": true,
   "scripts": {
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "server": "nodemon index.js",
+    "start": "node index.js"
   },
-  "jest": {
-    "testEnvironment": "node"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LambdaSchool/node-server-testing.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/LambdaSchool/node-server-testing/issues"
-  },
-  "homepage": "https://github.com/LambdaSchool/node-server-testing#readme",
   "devDependencies": {
     "jest": "^24.9.0",
     "supertest": "^4.0.2"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "knex": "^0.21.5",
+    "save": "^2.4.0",
     "sqlite3": "^5.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }
